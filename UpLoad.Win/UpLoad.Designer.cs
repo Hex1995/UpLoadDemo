@@ -35,6 +35,7 @@
             this.RicMsg = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.BtnSelectFolder = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -42,7 +43,7 @@
             // BtnSelectFile
             // 
             this.BtnSelectFile.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnSelectFile.Location = new System.Drawing.Point(819, 42);
+            this.BtnSelectFile.Location = new System.Drawing.Point(907, 42);
             this.BtnSelectFile.Name = "BtnSelectFile";
             this.BtnSelectFile.Size = new System.Drawing.Size(75, 23);
             this.BtnSelectFile.TabIndex = 0;
@@ -72,7 +73,7 @@
             // BtnUpload
             // 
             this.BtnUpload.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnUpload.Location = new System.Drawing.Point(919, 42);
+            this.BtnUpload.Location = new System.Drawing.Point(1007, 42);
             this.BtnUpload.Name = "BtnUpload";
             this.BtnUpload.Size = new System.Drawing.Size(75, 23);
             this.BtnUpload.TabIndex = 3;
@@ -92,6 +93,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.BtnSelectFolder);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.BtnSelectFile);
             this.panel1.Controls.Add(this.BtnUpload);
@@ -110,6 +112,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1116, 571);
             this.panel2.TabIndex = 6;
+            // 
+            // BtnSelectFolder
+            // 
+            this.BtnSelectFolder.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnSelectFolder.Location = new System.Drawing.Point(816, 42);
+            this.BtnSelectFolder.Name = "BtnSelectFolder";
+            this.BtnSelectFolder.Size = new System.Drawing.Size(75, 23);
+            this.BtnSelectFolder.TabIndex = 4;
+            this.BtnSelectFolder.Text = "选择文件夹";
+            this.BtnSelectFolder.UseVisualStyleBackColor = true;
+            this.BtnSelectFolder.Click += new System.EventHandler(this.BtnSelectFolder_Click);
             // 
             // UpLoad
             // 
@@ -136,6 +149,7 @@
         private System.Windows.Forms.RichTextBox RicMsg;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button BtnSelectFolder;
     }
 }
 

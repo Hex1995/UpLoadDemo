@@ -41,19 +41,19 @@ namespace UpLoad.Lib
             {
                 return $"{b:N2}b";
             }
-            if (mb <1)
+            if (mb < 1)
             {
                 return $"{kb:N2}kb";
             }
-            if (gb <1)
+            if (gb < 1)
             {
                 return $"{mb:N2}mb";
             }
-            if (tb <1)
+            if (tb < 1)
             {
                 return $"{gb:N2}gb";
             }
-            if (pb <1)
+            if (pb < 1)
             {
                 return $"{tb:N2}tb";
             }

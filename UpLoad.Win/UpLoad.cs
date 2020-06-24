@@ -46,5 +46,15 @@ namespace UpLoad.Win
         {
             RicMsg.AppendText(msg);
         }
+
+        private void BtnSelectFolder_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog dialog = new FolderBrowserDialog();
+            var res = dialog.ShowDialog();
+            if (res== DialogResult.OK)
+            {
+                WriteMsg("打开了文件夹");
+            }
+        }
     }
 }

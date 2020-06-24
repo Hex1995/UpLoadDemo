@@ -25,7 +25,7 @@ namespace UpLoad.Wcf
             }
             if (composite.BoolValue)
             {
-                composite.StringValue += "Suffix";
+                composite.StringValue += "Suffix1";
             }
             return composite;
         }
