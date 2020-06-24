@@ -13,6 +13,7 @@ namespace UpLoad.Lib
         {
             try
             {
+
                 using (FileStream fs = new FileStream(path, FileMode.Open))
                 {
                     return GetFileSizeString(fs.Length);
